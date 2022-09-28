@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: rgb(39, 136, 39);}
+h2{
+    text-align: center;
+    text-decoration: underline;}
+h3 {
+    text-align:left;
+    font-style: italic; }
+body{
+    background-color: azure;
+    margin-left: 4cm;
+    margin-right: 4cm;}
+
+#para1{
+    text-align: justify;
+    color: rgb(129, 158, 129);
+    background-color: black;}
+table{
+    border: medium solid black;
+    border-collapse: collapse;}
+td,th{
+    border: thin solid rgba(0, 128, 0, 0.612)}
+
+table{
+    text-align: center;
+    margin-left: auto ;
+    margin-right: auto;}
+.palmares{
+    color: gold;}
+.armes{
+    margin:auto}
+.liens{
+    text-align:center;}
+ul{
+    display: flex;
+    justify-content: space-around}
+img{
+    display: block;
+    margin: auto;
+}
+

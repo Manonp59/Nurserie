@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Votre réservation d'hôtel</h1>
+    <img src="./Images/a949e6acb5c219b15d00dcad3ccee.jpeg" alt="vacances" width="800" height="400">
+    <h3>*Champs obigatoires</h3>
+
+    <form action="" method="get">
+    <div class="container">
+        <label>Votre nom <span class="rouge">*</span> : <br>
+            <input type="text" name="nom" placeholder="nom de famille" required>
+        </label><br><br>
+        <label>Votre prénom<span class="rouge">*</span> : <br>
+            <input type="text" name="prenom" placeholder="prenom" required>
+        </label><br><br>
+        <label>Votre numéro de téléphone <span class="rouge">*</span> : <br>
+            <input type="tel" name="numtel" placeholder="0604020103" required>
+        </label><br><br>
+        <label>Adresse e-mail <span class="rouge">*</span> : <br>
+            <input type="email" name="mail" required>
+        </label><br><br><br><br>
+        <label>Sélectionner la ville : <br>
+        <select name="ville" id="ville">
+            <option value="Paris">Paris</option>
+            <option value="Lille">Lille</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Nantes">Nantes</option>
+            <option value="Lyon">Lyon</option>
+            <option value="La Rochelle">La Rochelle</option>
+            <option value="Poitiers">Poitiers</option>
+            <option value="Toulouse">Toulouse</option>
+        </select></label><br><br>
+        <label>Date d'arrivée : <br>
+            <input type="date" name="date">
+        </label><br><br>
+        <label>Nombre de personnes <span class="rouge">*</span>: <br>
+            <input type="number" name="nombrepersonnes" min="1" required>
+        </label><br>
+        </div>
+        <div class="accepte"><p class="underline">Vos options :</p> 
+            <label> 
+                Climatisation<input type="checkbox" name="option1" value="Climatisation">
+            </label>
+            <label> 
+                Mini Bar<input type="checkbox" name="option2" id="Mini Bar">
+            </label>
+            <label> 
+                Jacuzzi<input type="checkbox" name="option3" id="Jacuzzi">
+            </label><br><br>
+        <textarea name="texte" id="texte" cols="60" rows="2" placeholder="Ajouter un commentaire"></textarea><br>
+    
+        <div class="blanc"><p> Acceptation des Conditions Générales de Vente (CGV)<span class="rouge">*</span></p>
+        <label>
+            <input type="radio" name="conditions" value="accepte">J'accepte
+        </label>
+        <label>
+            <input type="radio" name="conditions" value="refuse" checked required>Je refuse
+        </label>
+        </div>
+        <br><br>
+        <input id="bouton" width="200px" type="submit" value="Envoyer ma demande">
+        
+    </div>
+    </form>
+    
+</body>
+</html>
+

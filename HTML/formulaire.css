@@ -1,0 +1,50 @@
+h1,h3{
+    text-align: center;
+}
+h1{
+    color: rgb(43, 171, 226);
+    background-color: bisque;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    color: red;
+    font-weight: bold;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 3cm;
+    margin-right: 3cm;
+}
+#bouton{
+    background-color: rgb(43, 171, 226);
+    color: aliceblue;
+    border:double;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;}
+
+form{
+    background-color: rgb(203, 226, 239);}
+.rouge{
+    color: red;
+    font-weight: bold;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.container{
+    column-width: 30em;
+    text-align: center;
+}
+.accepte{
+    text-align:center;
+}
+.blanc{
+    background-color: beige;}
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+}

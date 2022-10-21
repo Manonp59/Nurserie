@@ -1,0 +1,24 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+
+.carousel{
+    width: 600px;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container{
+    padding: 2cm;
+}
+
+.reseaux{
+    display: flex;
+    justify-content: space-around;
+    margin: 1cm;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="Hello,%20Bootstrap%20!_fichiers/bootstrap.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./Hello, Bootstrap !_fichiers/style.html">
+
+    <!-- style directement en html  -->
+    <style>
+      [class*="col-"] {
+    background-color: #d4d4d4;
+    border: 2px solid #000000;
+    margin-top: 2px;
+    line-height: 50px;
+    text-align: center;
+}
+.row{
+    background-color: rgb(253, 255, 127);
+}
+.container, .container-fluid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(237, 219, 253);
+}
+
+/* desactivation clique droit :-) */ 
+/*
+*
+{
+/* -moz-user-select: none; /* Firefox */
+/* -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+/* -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+/* user-select: none; /* Propriété standard */
+/*} */
+
+    </style>
+
+    <title>Hello, Bootstrap !</title>
+  </head>
+
+  <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+    <div class="container bg-light">
+        <h1 class="text-primary">TP - La Grille Bootstrap</h1>
+
+        <p>Pour commencer, il faudra importer le framework Bootstrap dans chaque fichier html : <br>
+        Créer un nouveau fichier HTML et copier-coller le Starter Template de Bootstrap disponible sur <a href="https://getbootstrap.com/">getbootstrap.com</a> (Getting Started)</p>
+        <h3>Rappels :</h3>
+        <p>Le système de grille Bootstrap est utilisé pour des mises en pages réactives (responsive).<br> La grille représente la façon dont les éléments s’alignent sur différentes résolutions d’écran.<br>
+        Un conteneur Bootstrap est un élément html qui a la classe ".container". <br> Le conteneur est la racine du système de grille et il est utilisé pour contrôler la largeur de la disposition. </p>
+    </div>
+    <div class="container bg-light">
+      <p><b>Voici le code CSS à recopier dans votre fichier</b> <i>style.css</i> <b>pour tous les exercices suivants :</b></p> 
+      <code>
+        [class*="col-"] {
+          background-color: #d4d4d4;
+          border: 2px solid #000000;
+          margin-top: 2px;
+          line-height: 50px;
+          text-align: center;
+      }
+      .row{
+          background-color: rgb(253, 255, 127);
+      }
+      .container, .container-fluid {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          background-color: rgb(237, 219, 253);
+      }
+      </code> 
+      <br><p></p><p><b>Nous ne modifierons plus le CSS pour la suite des exercices.</b> </p><br>
+    </div>
+    
+
+<div class="container">
+    <h4>Exercice 1</h4>
+    <p>Dans un container ouvrir une ".row "puis une colonne de 8 (".col-8") et une colonne de 4 (".col-4"). <br>
+        <b>Dans la colonne de 8 </b>insérer une ".row" qui contiendra une ".col-3", une ".col-6" et une ".col-3". </p>
+</div>
+    
+<!-- Exo 1 -->
+    <div class="container">
+        <div class="row">
+           <div class="col-8">
+              8 colonnes
+              <div class="row">
+                 <div class="col-3">3 colonnes</div>
+                 <div class="col-6">6 colonnes</div>
+                 <div class="col-3">3 colonnes</div>
+              </div>
+           </div>
+           <div class="col-4">
+              4 colonnes
+           </div>
+        </div>
+     </div>
+
+<!-- Fin exo 1 -->
+
+<div class="container">
+    <h4>Exercice 2</h4>
+    <p>Dans un container ouvrir une ".row " pour chaque ligne et remplir
+ chaque ligne par le nombre de colonnes adéquat en reprenant le modèle 
+ci-dessous. </p>
+    <p><em>Aide : la première ligne sera par exemple :</em>  &lt;div class="row"&gt;
+        &lt;div class="col-12"&gt; espace occupé par 12 colonnes dans une ligne&lt;/div&gt;
+        &lt;/div&gt;</p>
+</div>
+<!-- Exo 2 -->
+     <div class="container">
+        <div class="row">
+            <div class="col-12"> espace occupé par 12 colonnes dans une ligne</div>
+        </div>
+        <div class="row">
+            <div class="col-6">espace occupé par 6 colonnes dans une ligne</div>
+            <div class="col-6">espace occupé par 6 colonnes dans une ligne</div>
+        </div>
+        <div class="row">
+            <div class="col-4">espace occupé par 4 colonnes dans une ligne</div>
+            <div class="col-4">espace occupé par 4 colonnes dans une ligne</div>
+            <div class="col-4">espace occupé par 4 colonnes dans une ligne</div>
+        </div>
+        <div class="row">
+            <div class="col-3">espace occupé par 3 colonnes dans une ligne</div>
+            <div class="col-3">espace occupé par 3 colonnes dans une ligne</div>
+            <div class="col-3">espace occupé par 3 colonnes dans une ligne</div>
+            <div class="col-3">espace occupé par 3 colonnes dans une ligne</div>
+        </div>
+        <div class="row">
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+            <div class="col-2">espace occupé par 2 colonnes dans une ligne</div>
+        </div>
+    </div>
+<!-- Fin exo 2 -->
+
+    <div class="container">
+      <h4>Exercice 3</h4>
+      <p>Reproduire le modèle ci-dessous. Sur mobile chaque élément 
+devra occuper toute la largeur disponible (12 colonnes - ".col-sm-12"). </p>
+  </div>
+<!-- Exo 3 -->
+      <div class="container">
+          <header class="row">
+            <div class="col-sm-12">
+              Entete
+            </div>
+          </header>
+          <div class="row">
+            <nav class="col-md-2 col-sm-12">
+              Menu (.col-md-2 .col-sm-12)
+            </nav>
+            <section class="col-sm-12 col-md-10">
+              Section (.col-md-10 .col-sm-12)
+              
+            </section>
+          </div>
+          <footer class="row">
+            <div class="col-sm-12">
+              Pied de page
+            </div>
+          </footer>
+        </div>
+<!-- Fin Exo 3 -->
+
+<div class="container">
+  <h4>Exercice 4</h4>
+  <p>En recopiant l'exercice précédent nous allons ajouter un décalage 
+de la section vers la droite avec la classe .offset sur les grands 
+écrans (lg) </p>
+</div>
+<!-- Exo 4 -->
+        <main class="container">
+            <header class="row">
+                <div class="col-sm-12">Entete</div>    
+            </header>
+            <div class="row">
+                <nav class="col-sm-12 col-lg-2 ">
+                    Menu (.col-sm-12 .col-lg-2)
+                </nav>
+                <section class="col-sm-12 offset-lg-1 col-lg-9">
+                    Section (.col-sm-12 .offset-lg-1 .col-lg-9)
+                </section>
+            </div>
+            <footer class="row">
+                <div class="col-sm-12">Pied de page</div>
+            </footer>
+        </main>
+
+<!-- fin exo 4 -->
+<div class="container">
+  <h4>Exercice 5</h4>
+  <p>Utiliser un conteneur Bootstrap qui occupe toute la largeur de l'écran (fluid) pour réaliser le schéma suivant. </p>
+</div>
+<!-- Exo 5 -->
+        <div class="container-fluid">
+          <div class="row">
+             <div class="col-md-12">Premier niveau avec 12 colonnes
+                <div class="row">
+                   <div class="col-md-8">Second niveau avec 8 colonnes
+                      <div class="row">
+                         <div class="col-md-4">Troisième niveau avec 4 colonnes</div>
+                         <div class="col-md-6 col-md-offset-2">Troisième niveau avec 6 colonnes
+                            <div class="row">
+                               <div class="col-md-3 col-md-offset-1">Quatrième niveau avec 3 colonnes</div>
+                               <div class="col-md-5 col-md-offset-1">Quatrième niveau avec 5 colonnes</div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4">Second niveau avec 4 colonnes</div>
+                </div>
+             </div>
+       </div>
+    </div>
+<!-- Fin exo 5 -->
+       
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="Hello,%20Bootstrap%20!_fichiers/bootstrap.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  
+
+</body></html>
